@@ -1,0 +1,104 @@
+.Live{
+  background: rgb(219,219,219);
+  margin: 25px 30px 25px 30px;
+  height: 450px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+
+
+}
+
+.Live img{
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+
+}
+
+.Live h1{
+  margin: 5%;
+}
+
+.Live:hover {
+    -webkit-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    transform: translateY(-6px);
+}
+
+.Youtube{
+  width: 850px;
+  height: 550px;
+  transition: all 0.5s;
+}
+
+.Video{
+  background: rgb(94,94,94);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  flex-wrap: nowrap;
+
+}
+
+.Youtube:hover {
+    -webkit-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    transform: translateY(-6px);
+}
+
+
+.subo{
+  display: flex;
+  justify-content: center;
+
+}
+.suscripcion{
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.boton{
+  padding-top: 30px;
+}
+.notificacion{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*Diseño responsivo para el video */
+
+@media screen and (max-width:1000px)
+{
+    .Youtube{
+      width: 95%;
+      height:550px;
+    }
+}
+
+@media screen and (max-width:700px)
+{
+    .Youtube{
+      width:92%;
+      height:350px;
+    }
+}
+
+@media screen and (max-width:450px)
+{
+    .Youtube{
+      width:85%;
+      height:300px;
+
+    }
+}

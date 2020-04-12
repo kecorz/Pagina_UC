@@ -1,0 +1,77 @@
+
+.ajustar{
+  
+  width: 100%;
+
+}
+
+.Servicio{
+  background: rgb(219,219,219);
+   margin: 25px 30px 25px 30px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+   transition: all 0.5s;
+}
+
+.Servicio:hover {
+    -webkit-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    transform: translateY(-6px);
+}
+
+.Servicio img{
+  width: 124px;
+  height: 124px;
+}
+
+.Servicio h1{
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+
+/*Apartado de tres*/
+.Servicio_Social{
+   background: rgb(51,51,51);
+    margin: 25px 30px 25px 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height:  650px;
+   color: white;
+   margin: 10px 0 10px 0;
+   padding-top: 40px;
+   padding-bottom: 20px;
+   transition: all 0.5s;
+}
+
+.Servicio_Social:hover {
+    -webkit-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    transform: translateY(-6px);
+}
+
+
+.Servicio_Social img{
+  max-width: 100%;
+  width: 70%;
+  height: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+
+}
+
+.Servicio_Social p{
+  margin-left : 5%;
+  margin-right: 5%;
+}
+
+.ofrecemos{
+  background: rgb(94,94,94);
+}

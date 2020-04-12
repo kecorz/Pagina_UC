@@ -1,0 +1,203 @@
+
+h1{
+  text-align: center;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+
+}
+
+
+.ContenedorUC{
+  background: rgb(219,219,219);
+  width: 95%; /**valor que puede ser cambiado**/
+  margin: 25px 30px 25px 30px;
+  height: 450px;
+  display: flex;
+  padding-bottom: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.ContenedorUC:hover {
+    -webkit-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    transform: translateY(-6px);
+}
+
+
+.ContenedorUC img{
+  max-width: 85%;
+  max-height: 80%;
+  width: 244px;
+  height: 147px;
+}
+
+.ContenedorUC p{
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+/*******************Mision y Vision***********************/
+
+.cont_mv{
+  background: rgb(94,94,94);
+  width: 90%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+  padding: 50px 70px 30px 70px;
+  margin: 25px 30px 25px 30px;
+  transition: all 0.5s;
+
+}
+
+.cont_mv:hover {
+    -webkit-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    box-shadow: 4px -9px 54px -19px rgba(0,0,0,0.75);
+    transform: translateY(-6px);
+}
+.cont_mv img {
+    max-width: 90%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 40px;
+
+}
+
+.cont_mv p {
+    margin: 2%;
+    color: white;
+}
+
+.cont_mv h1 {
+    margin: 2%;
+    color: white;
+}
+
+
+
+/**Equipo**/
+
+.icono_Equipo img{
+  max-width: 80%;
+  width: 153px;
+  height: 153px;
+}
+
+.icono_Equipo{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;|
+}
+
+
+/*Conoce al equipo*/
+
+  .Contenedor-imagenes{
+    display: flex;
+    width: 95%; /**valor que puede ser cambiado**/
+    margin: 25px 30px 25px 30px;
+    /*justify-content: space-around;*/
+    flex-wrap: wrap;
+
+
+  }
+  .Contenedor-imagenes .imagen{
+    width: 25%; /*numero de imagens*/
+    position: relative;
+    height: 250px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+
+  }
+
+  .imagen .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Pra no deformar*/
+  }
+
+  .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba( 130, 130, 130,.5);
+    transition: 1s ease;
+    overflow: hidden;
+  }
+
+  .overlay p{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+
+  }
+
+  .overlay h1{
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -300%);
+
+  }
+
+  .imagen:hover .overlay{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+  }
+
+  /***************************************** PARTE RESPONSIVA ****************************************************************************
+
+
+
+
+
+  /*Diseño responsivo de la galeria de fotos*/
+  @media screen and (max-width:1000px)
+  {
+      .Contenedor-imagenes{
+        width: 95%;
+      }
+
+  }
+
+  @media screen and (max-width:700px)
+  {
+      .Contenedor-imagenes{
+        width: 90%;
+      }
+      .Contenedor-imagenes .imagen{
+        width: 48%;
+      }
+  }
+
+  @media screen and (max-width:450px)
+  {
+      .Contenedor-imagenes{
+        width: 98%;
+      }
+      .Contenedor-imagenes .imagen{
+        width: 80%;
+      }
+  }
